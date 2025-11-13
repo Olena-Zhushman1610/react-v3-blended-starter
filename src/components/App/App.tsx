@@ -14,7 +14,7 @@ export default function App() {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
   const handleSearch = async (term: string) => {
     //setQuery(term);
@@ -31,8 +31,8 @@ export default function App() {
       setIsLoading(false);
     }
   };
-  const handleOpenModal = (photo: Photo) => {
-    setSelectedPhoto(photo.src.large);
+  const handleOpenModal = (photo: Photo | null) => {
+    setSelectedPhoto(photo);
   };
 
   const handleCloseModal = () => {

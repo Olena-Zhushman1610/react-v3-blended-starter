@@ -1,5 +1,5 @@
 import type { Photo } from "../../types/photo";
-import { GridItem } from "../Grid/Grid";
+import GridItem from "../Grid/Grid";
 import Grid from "../Grid/Grid";
 import PhotosGalleryItem from "../PhotosGalleryItem/PhotosGalleryItem";
 

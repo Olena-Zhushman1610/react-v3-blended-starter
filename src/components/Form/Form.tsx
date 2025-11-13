@@ -25,7 +25,7 @@ export default function Form({ onSubmit }: FormProps) {
   };
 
   return (
-    <form className={style.form} onSubmit={handleSubmit}>
+    <form className={style.form} action={handleSubmit}>
       <input
         className={style.input}
         placeholder="What do you want to write?"

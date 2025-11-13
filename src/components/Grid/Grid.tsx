@@ -8,7 +8,3 @@ interface GridProps {
 export default function Grid({ children }: GridProps) {
   return <ul className={style.list}>{children}</ul>;
 }
-
-export function GridItem({ children }: GridProps) {
-  return <li className={style.gridItem}>{children}</li>;
-}
