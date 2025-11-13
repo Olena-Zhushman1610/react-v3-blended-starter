@@ -52,3 +52,4 @@ export default tseslint.config({
   },
 })
 ```
+# react-v3-blended-starter
